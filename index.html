@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/main.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div class="mx-auto w-full">
+            <h1 class="text-5xl py-5 bg-orange-950 text-center text-white text-bold">Quiz Game Time!</h1>
+            <div class="question-wrapper">
+                <h1 class="text-center text-4xl text-bold text-black mt-12 mb-6 question-number">Question 1</h1>
+                <p class="text-center mt-6 text-3xl text-bold question-text" id="question-text">Question goes here...</p>
+                <p class="text-center" id="flavor-text">Some fun flavor text...</p>
+            </div>
+
+            <div class="md:py-8"></div>
+
+            <!--Options Container-->
+            <div class="flex flex-col mt-8 mx-3 px-3 max-w-full justify-center rounded drop-shadow-md bg-orange-950 bg-opacity-80 md:bg-transparent md:space-x-4 md:flex-row">
+                <div class="flex flex-row space-x-6 pt-12 pb-12 md:w-full md:pl-8 md:pb-0">
+                    <button class="rounded w-full px-1 py-1 drop-shadow-md md:px-5 bg-white hover:bg-slate-500 hover:text-white" id="option-A">Option 1</button>
+                    <button class="rounded w-full px-1 py-1 drop-shadow-md bg-white hover:bg-slate-500 hover:text-white" id="option-B">Option 2</button>
+                </div>
+
+                <div class="flex flex-row space-x-6 pb-6 pt-12 md:w-full md:pr-8 md:pb-0">
+                    <button class="rounded w-full px-1 py-1 drop-shadow-md bg-white hover:bg-slate-500 hover:text-white" id="option-C">Option 3</button>
+                    <button class="rounded w-full px-1 py-1 drop-shadow-md bg-white hover:bg-slate-500 hover:text-white" id="option-D">Option 4</button>    
+                </div>
+            </div>
+
+            <!--Hints Container-->
+            <div class="max-w-full mx-3 mt-36 text-center md:mx-14">
+                <p class="rounded bg-white outline-8 outline-orange-950"><span id="hint-number">3</span> hints left!</p>
+                <button class="hint rounded bg-white drop-shadow-md w-1/2 mt-6 hover:bg-slate-500 hover:text-white">Need a hint?</button>
+            </div>
+
+            <div class="score-wrapper">
+                <p>Score: <span class="score">0</span></p>
+            </div>
+        </div>
+
+    <script src="app.js"></script>
+</body>
+</html
